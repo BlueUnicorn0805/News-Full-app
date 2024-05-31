@@ -1,0 +1,366 @@
+/*
+	API v3.0.6
+	News App - WRTeam.in 
+	WRTeam Developers
+*/
+API URL -->> 
+	https://news.wrteam.me/Api/{METHOD_NAME} 
+
+API methods
+-------------------------
+1. get_breaking_news
+2. get_category
+3. get_news
+4. get_news_by_category
+5. get_news_by_id
+6. user_signup
+7. update_profile
+8. set_profile_image
+9. register_token
+10. get_user_by_id
+11. get_settings
+12. set_comment
+13. get_comment_by_news
+14. delete_comment
+15. set_bookmark
+16. get_bookmark
+17. get_notification
+18. set_user_category
+19. get_news_by_user_category
+20. set_like_dislike
+21. set_flag
+22. get_live_streaming
+23. set_comment_like_dislike
+24. get_subcategory_by_category
+25. get_news_by_tag
+27. update_fcm_id
+28. get_user_notification
+29. delete_user_notification
+30. get_question
+31. set_question_result
+32. get_question_result
+33. delete_user
+34. set_news
+35. update_news - unused
+36. delete_news_images
+37. delete_news
+38. get_tag
+39. get_videos
+40. get_pages
+41. get_languages_list       
+42. get_language_json_data
+43. get_policy_pages
+44. set_news_view
+45. set_breaking_news_view
+46. get_featured_sections
+47. get_featured_section_by_id
+48. get_like
+49. get_breaking_news_by_id
+50. generate_token_api
+51. get_web_settings
+52. get_ad_space_news_details
+
+
+------------------------------------------
+What parameters to be Passed?  See here >>
+------------------------------------------
+
+Use POST method to pass the parameters
+
+1. get_breaking_news
+        access_key:5670
+        language_id:14
+
+2. get_category
+        access_key:5670
+        offset:0
+        limit:10
+        language_id:14
+
+3. get_news
+	access_key:5670
+        offset:0
+        limit:10
+        user_id:1
+        get_user_news:1  //pass user_id (get news where user_id=1, news added from app)
+        search:keyword  {optional}
+        language_id:14
+
+4. get_news_by_category
+        access_key:5670
+	category_id:1  {or}
+        subcategory_id:1
+        offset:0
+        limit:10
+        user_id:1
+        language_id:14
+
+5. get_news_by_id
+        access_key:5670
+	    news_id:1
+        user_id:1
+        language_id:14
+
+6. user_signup
+        access_key:5670
+        firebase_id:mf5FQ7MtNwdguEDMlTLNarkj4AZ2 //Firebase ID
+        name:Abc
+	email:abc@yahoo.com
+	mobile:9876543210
+	type:email / gmail / fb/ apple / mobile
+        profile:Image URL   
+        status:1   // 1 - Active & 0 Deactive
+        fcm_id:fcm_id  
+
+7. update_profile
+        access_key:5670
+        user_id:1
+        name:Abc
+        mobile:9876543210  {optional}
+        email:abc@yahoo.com {optional}
+
+8. set_profile_image
+        access_key:5670
+        user_id:1
+        image: image file
+
+9. register_token
+        access_key:5670
+        token:token
+
+10. get_user_by_id
+        access_key:5670
+        user_id:1
+
+11. get_settings
+        access_key:5670
+
+12. set_comment
+        access_key:5670
+        user_id:1
+        parent_id:1   if not exists, set 0 
+        news_id:1
+        message:your message
+        language_id: 14
+
+13. get_comment_by_news
+        access_key:5670
+        news_id:1
+        user_id:1
+        offset:0
+        limit:10
+
+14. delete_comment
+        access_key:5670
+        user_id:1
+        comment_id:1
+
+15. set_bookmark
+        access_key:5670
+        user_id:1
+        news_id:1
+        status:1   //1-bookmark, 0-unbookmark
+
+16. get_bookmark
+        access_key:5670
+        user_id:1
+        language_id:14
+        offset:0
+        limit:10
+
+17. get_notification
+        access_key:5670
+        offset:0
+        limit:10
+
+18. set_user_category
+        access_key:5670
+        user_id:1
+        category_id:1,2
+
+19. get_news_by_user_category
+        access_key:5670
+        user_id:1
+        category_id:1,2
+        offset:0
+        limit:10
+        language_id:14
+
+20. set_like_dislike
+        access_key:5670
+        user_id:1
+        news_id:1
+        status:1    // 1=like, 2=dislike, 0=none
+
+21. set_flag
+        access_key:5670
+        comment_id:1
+        user_id:1
+        news_id:1
+        message:your message
+
+22. get_live_streaming
+        access_key:5670
+        language_id:14
+
+23. set_comment_like_dislike
+        access_key:5670
+        user_id:1
+        comment_id:1
+        status:1    // 1=like, 2=dislike, 0=none
+        language_id: 14
+
+24. get_subcategory_by_category
+        access_key:5670
+        category_id:
+        language_id:14
+
+25. get_news_by_tag
+        access_key:5670
+        user_id:1
+        tag_id:1
+        language_id:14
+
+27. update_fcm_id
+        access_key:5670
+        user_id:1
+        fcm_id:test
+
+28. get_user_notification
+        access_key:5670
+        user_id:1
+        offset :0
+        limit:10
+
+29. delete_user_notification
+        access_key:5670
+        id:1,2,3
+
+30. get_question
+        access_key:5670
+        user_id:1
+        language_id:14
+
+31. set_question_result
+        access_key:5670
+        user_id:3
+        question_id:3
+        option_id:8
+
+32. get_question_result
+        access_key:5670
+        user_id:1
+        language_id:14
+
+33. delete_user
+        access_key:5670
+        user_id:1
+
+34. set_news
+        access_key:5670: 1-add, 2-update
+        action_type : 1-add, 2-update
+            if action_type- 2 => news_id:1
+        user_id:1
+        category_id:1
+        subcategory_id:1
+        tag_id:1,2
+        title:api news
+        content_type:video_other                               //standard_post, video_youtube, video_other, video_upload
+        content_data :https://www.other.com/watch?v=0NCdV0zrHPg    
+        description:<p>ew Zealand is suspending all high-level contact with Myanmar and imposing a travel ban on its military leaders following last week's coup, Prime Minister Jacinda Ardern said on Tuesday.</p>
+        image:File
+        ofile[0]:Multiple File
+        show_till:2022-11-11
+        language_id:14
+
+35. update_news - unused
+        access_key:5670
+        news_id:155
+        category_id:1
+        subcategory_id:1
+        tag_id:1,2
+        title:api news
+        content_type:video_other                               //standard_post, video_youtube, video_other, video_upload
+        other_url:https://www.other.com/watch?v=0NCdV0zrHPg    // '',           youtube_url,   other_url,   video_file
+        description:<p>ew Zealand is suspending all high-level contact with Myanmar and imposing a travel ban on its military leaders following last week's coup, Prime Minister Jacinda Ardern said on Tuesday.</p>
+        image:File
+        ofile[0]:Multiple File
+        show_till:2022-11-11
+        language_id:14
+
+36. delete_news_images
+        access_key:5670
+        id:64     //id = image_id
+
+37. delete_news
+        access_key:5670
+        id:64     //id = news_id
+
+38. get_tag
+        access_key:5670
+        language_id:14
+
+39. get_videos
+        access_key:5670
+        language_id:14
+        
+40. get_pages
+        access_key:5670
+        language_id:14
+        
+41. get_languages_list
+        access_key:5670
+        
+42. get_language_json_data
+        access_key:5670
+        code: en
+
+43. get_policy_pages
+        access_key:5670
+        language_id: 14
+
+44. set_news_view
+        access_key:5670
+        user_id:4
+        news_id:2
+
+45. set_breaking_news_view
+        access_key:5670
+        user_id:4
+        breaking_news_id:2
+
+46. get_featured_sections
+        access_key:5670
+        language_id: 14 
+        user_id: 952
+
+47. get_featured_section_by_id
+        access_key:5670
+        section_id:27
+        language_id: 14 
+        user_id: 952
+        offset:0
+        limit:10
+
+48. get_like
+        access_key:5670
+        user_id:1
+        language_id:14
+        offset:0
+        limit:10
+        
+49. get_breaking_news_by_id
+        access_key:5670
+        breaking_news_id:1
+        user_id:1
+        language_id:14
+
+50. generate_token_api
+        access_key:5670
+
+51. get_web_settings
+        access_key:5670
+
+52. get_ad_space_news_details
+        access_key:5670
+        language_id:14

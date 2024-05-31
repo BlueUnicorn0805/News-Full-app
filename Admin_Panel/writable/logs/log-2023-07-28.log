@@ -1,0 +1,46 @@
+CRITICAL - 2023-07-28 16:18:33 --> Undefined array key 0
+in APPPATH\Controllers\Api.php on line 1415.
+ 1 APPPATH\Controllers\Api.php(1415): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Api.php', 1415)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Api->update_profile()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 16:18:54 --> Undefined array key 0
+in APPPATH\Controllers\Api.php on line 1415.
+ 1 APPPATH\Controllers\Api.php(1415): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Api.php', 1415)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Api->update_profile()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-28 16:35:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'OR CAST(n.show_till AS CHAR(20)) = '0000-00-00'
+AND n.language_id GROUP BY n....' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(n.id) as news_count, `l`.`language`
+FROM `tbl_news` `n`
+JOIN `tbl_languages` `l` ON `l`.`id` = `n`.`language_id`
+WHERE `n`.`status` = 1
+AND `n`.`show_till` >= \'2023-07-28\' OR OR CAST(n.show_till AS CHAR(20)) = \'0000-00-00\'
+AND n.language_id GROUP BY n.language_id,l.language', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(n.id) as news_count, `l`.`language`
+FROM `tbl_news` `n`
+JOIN `tbl_languages` `l` ON `l`.`id` = `n`.`language_id`
+WHERE `n`.`status` = 1
+AND `n`.`show_till` >= \'2023-07-28\' OR OR CAST(n.show_till AS CHAR(20)) = \'0000-00-00\'
+AND n.language_id GROUP BY n.language_id,l.language')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(n.id) as news_count, `l`.`language`
+FROM `tbl_news` `n`
+JOIN `tbl_languages` `l` ON `l`.`id` = `n`.`language_id`
+WHERE `n`.`status` = 1
+AND `n`.`show_till` >= \'2023-07-28\' OR OR CAST(n.show_till AS CHAR(20)) = \'0000-00-00\'
+AND n.language_id GROUP BY n.language_id,l.language')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(n.id) as news_count, `l`.`language`
+FROM `tbl_news` `n`
+JOIN `tbl_languages` `l` ON `l`.`id` = `n`.`language_id`
+WHERE `n`.`status` = :n.status:
+AND `n`.`show_till` >= \'2023-07-28\' OR OR CAST(n.show_till AS CHAR(20)) = \'0000-00-00\'
+AND n.language_id GROUP BY n.language_id,l.language', [...], false)
+ 5 APPPATH\Controllers\Dashboard.php(94): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

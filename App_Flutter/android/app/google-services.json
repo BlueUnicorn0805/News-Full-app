@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "496570583234",
+    "project_id": "news-6c928",
+    "storage_bucket": "news-6c928.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:496570583234:android:fd2f156a75ee004c7a135b",
+        "android_client_info": {
+          "package_name": "com.sachkasath"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYU4uvXaIbZYLKB4XGrr09lLkpse8eff8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

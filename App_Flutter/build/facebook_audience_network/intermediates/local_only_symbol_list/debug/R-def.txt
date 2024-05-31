@@ -1,0 +1,22 @@
+R_DEF: Internal format may change without notice
+local
+drawable ic_profile_cover
+id ad_choices_container
+id ad_unit
+id native_ad_body
+id native_ad_button_text
+id native_ad_call_to_action
+id native_ad_container
+id native_ad_icon
+id native_ad_main
+id native_ad_media
+id native_ad_option
+id native_ad_social_context
+id native_ad_sponsored_label
+id native_ad_title
+id profile_filter
+layout fb_native_ad_container
+layout fb_native_ad_layout_horizontal
+layout fb_native_ad_layout_vertical
+layout fb_native_banner_ad
+layout fb_native_media_item_ad

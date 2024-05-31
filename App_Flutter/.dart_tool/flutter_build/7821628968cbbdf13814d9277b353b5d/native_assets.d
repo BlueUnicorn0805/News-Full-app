@@ -1,0 +1,1 @@
+ D:\\Project\\0_temp\\Codecanyon\\news-flutter-news-full-app-3.1.2\\App_Flutter_Code-3.1.2\\.dart_tool\\flutter_build\\7821628968cbbdf13814d9277b353b5d\\native_assets.yaml: 

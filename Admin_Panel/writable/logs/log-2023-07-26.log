@@ -1,0 +1,28 @@
+CRITICAL - 2023-07-26 22:41:59 --> Undefined array key "filetype"
+in APPPATH\Controllers\News.php on line 379.
+ 1 APPPATH\Controllers\News.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "filetype"', 'APPPATH\\Controllers\\News.php', 379)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\News->upload_img()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-26 22:45:13 --> Undefined array key "filetype"
+in APPPATH\Controllers\News.php on line 379.
+ 1 APPPATH\Controllers\News.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "filetype"', 'APPPATH\\Controllers\\News.php', 379)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\News->upload_img()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-26 22:45:41 --> Undefined array key "filetype"
+in APPPATH\Controllers\News.php on line 379.
+ 1 APPPATH\Controllers\News.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "filetype"', 'APPPATH\\Controllers\\News.php', 379)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\News->upload_img()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-26 22:46:39 --> Undefined array key "filetype"
+in APPPATH\Controllers\News.php on line 379.
+ 1 APPPATH\Controllers\News.php(379): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "filetype"', 'APPPATH\\Controllers\\News.php', 379)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\News->upload_img()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
